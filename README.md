@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DocuChat Ultra 🧠✨
 
-## Getting Started
+> **Experience the future of document interaction.** 
+> DocuChat Ultra is a premium, AI-powered document assistant featuring a "Premium Glass" aesthetic, real-time streaming responses, and intelligent single-document context.
 
-First, run the development server:
+![DocuChat Ultra](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2QzM2QzM2QzM2QzM2QzM2QzM2QzM2QzM2QzM2QzM3/xT9IgzoKnwFNmISR8I/giphy.gif)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*(Replace above link with actual demo screenshot if available)*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Ultra Mode UI**
+- **Premium Glass Aesthetic**: Frosted glass panels (glassmorphism), deep aurora gradients, and 1px borders for a modern, high-end look.
+- **Typewriter Effect**: AI responses stream character-by-character for a "live" conversation feel.
+- **Markdown Intelligence**: Full support for bold, italics, code blocks, and structured lists in AI replies.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Core Intelligence**
+- **RAG Architecture**: Uses Retrieval-Augmented Generation to chat *with* your specific documents, not just general knowledge.
+- **Single-Document Focus**: Automatically clears context when a new file is uploaded, preventing hallucinated crossovers between documents.
+- **High-Performance Vector DB**: Powered by **Pinecone** for instant, semantic search.
+- **Google Gemini Pro**: The brain behind the operation, providing nuanced and accurate answers.
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS + `@tailwindcss/typography`
+- **AI Model**: Google Gemini Pro (`@google/generative-ai`)
+- **Vector DB**: Pinecone
+- **Handling**: `pdfjs-dist` for client-side parsing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 local Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **Clone the repo:**
+    ```bash
+    git clone https://github.com/WayneChibeu/docuchat-ultra.git
+    cd docuchat-ultra
+    ```
 
-## Deploy on Vercel
+2.  **Install dependencies:**
+    ```bash
+    pnpm install
+    # or npm install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3.  **Configure Environment:**
+    Create a `.env` file in the root:
+    ```env
+    GOOGLE_GEMINI_API_KEY=your_key_here
+    PINECONE_API_KEY=your_key_here
+    PINECONE_INDEX=docuchat
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4.  **Run Development Server:**
+    ```bash
+    pnpm dev
+    ```
+
+Open [http://localhost:3000](http://localhost:3000) to see it in action.
+
+## 🚢 Deployment
+
+Deployed via **Vercel**. 
+Live URL: [docuchat-ultra.vercel.app](https://docuchat-ultra.vercel.app)
+
+---
+
+*Built with ❤️ by Wayne*
