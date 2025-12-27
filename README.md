@@ -1,26 +1,24 @@
-# DocuChat Ultra 🧠✨
+# DocuChat Ultra
 
-> **Experience the future of document interaction.** 
+> **Experience the future of document interaction.**
 > DocuChat Ultra is a premium, AI-powered document assistant featuring a "Premium Glass" aesthetic, real-time streaming responses, and intelligent single-document context.
 
-![DocuChat Ultra](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2QzM2QzM2QzM2QzM2QzM2QzM2QzM2QzM2QzM2QzM3/xT9IgzoKnwFNmISR8I/giphy.gif)
+![DocuChat Ultra](public/docuchat-demo.png)
 
-*(Replace above link with actual demo screenshot if available)*
+## Features
 
-## 🚀 Features
-
-### **Ultra Mode UI**
+### Ultra Mode UI
 - **Premium Glass Aesthetic**: Frosted glass panels (glassmorphism), deep aurora gradients, and 1px borders for a modern, high-end look.
 - **Typewriter Effect**: AI responses stream character-by-character for a "live" conversation feel.
 - **Markdown Intelligence**: Full support for bold, italics, code blocks, and structured lists in AI replies.
 
-### **Core Intelligence**
+### Core Intelligence
 - **RAG Architecture**: Uses Retrieval-Augmented Generation to chat *with* your specific documents, not just general knowledge.
-- **Single-Document Focus**: Automatically clears context when a new file is uploaded, preventing hallucinated crossovers between documents.
+- **Single-Document Focus**: Automatically clears context when a first file is uploaded, preventing hallucinated crossovers between documents.
 - **High-Performance Vector DB**: Powered by **Pinecone** for instant, semantic search.
 - **Google Gemini Pro**: The brain behind the operation, providing nuanced and accurate answers.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 14 (App Router)
 - **Styling**: Tailwind CSS + `@tailwindcss/typography`
@@ -28,7 +26,7 @@
 - **Vector DB**: Pinecone
 - **Handling**: `pdfjs-dist` for client-side parsing
 
-## 📦 local Setup
+## Local Setup
 
 1.  **Clone the repo:**
     ```bash
@@ -57,9 +55,9 @@
 
 Open [http://localhost:3000](http://localhost:3000) to see it in action.
 
-## 🚢 Deployment
+## Deployment
 
-Deployed via **Vercel**. 
+Deployed via **Vercel**.
 Live URL: [docuchat-ultra.vercel.app](https://docuchat-ultra.vercel.app)
 
 ---
