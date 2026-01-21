@@ -68,7 +68,7 @@ ANSWER:`;
     } catch (error) {
         console.error("Chat error:", error);
         return NextResponse.json(
-            { error: "Failed to generate response" },
+            { error: error instanceof Error ? error.message : "Failed to generate response" },
             { status: 500 }
         );
     }

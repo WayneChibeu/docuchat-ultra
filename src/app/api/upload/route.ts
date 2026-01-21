@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
     } catch (error) {
         console.error("Upload error:", error);
         return NextResponse.json(
-            { error: "Failed to process document" },
+            { error: error instanceof Error ? error.message : "Failed to process document" },
             { status: 500 }
         );
     }

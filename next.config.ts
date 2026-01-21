@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    optimizePackageImports: ["pdfjs-dist", "@google/generative-ai", "@pinecone-database/pinecone"],
+  },
 };
 
 export default nextConfig;

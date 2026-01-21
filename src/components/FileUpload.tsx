@@ -23,7 +23,7 @@ export default function FileUpload({ onUploadComplete }: FileUploadProps) {
         const loadPdfjs = async () => {
             const pdfjsLib = await import("pdfjs-dist");
             // Use local worker file
-            pdfjsLib.GlobalWorkerOptions.workerSrc = "/pdf.worker.js";
+            pdfjsLib.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
             setPdfjs(pdfjsLib);
         };
         loadPdfjs().catch(console.error);
