@@ -165,7 +165,7 @@ export default function ChatInterface() {
             </div>
 
             {/* Input */}
-            <form onSubmit={handleSubmit} className="p-6 border-t border-white/5 bg-black/20 backdrop-blur-md">
+            <form onSubmit={handleSubmit} className="p-3 md:p-6 border-t border-white/5 bg-black/20 backdrop-blur-md">
                 <div className="relative group">
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-xl blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
                     <div className="relative flex gap-2">
@@ -174,12 +174,12 @@ export default function ChatInterface() {
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             placeholder="Ask a specific question..."
-                            className="flex-1 bg-slate-900/90 text-white rounded-xl px-5 py-4 outline-none placeholder-slate-500 shadow-inner ring-1 ring-white/10 focus:ring-violet-500/50 transition-all"
+                            className="flex-1 bg-slate-900/90 text-white rounded-xl px-4 md:px-5 py-3 md:py-4 outline-none placeholder-slate-500 shadow-inner ring-1 ring-white/10 focus:ring-violet-500/50 transition-all text-sm md:text-base"
                         />
                         <button
                             type="submit"
                             disabled={isLoading || !input.trim()}
-                            className="bg-gradient-to-br from-violet-600 to-indigo-700 text-white px-6 py-2 rounded-xl font-medium shadow-lg hover:shadow-violet-500/25 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none"
+                            className="shrink-0 bg-gradient-to-br from-violet-600 to-indigo-700 text-white px-4 md:px-6 py-2 rounded-xl font-medium shadow-lg hover:shadow-violet-500/25 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none"
                         >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
