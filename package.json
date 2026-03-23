@@ -2,7 +2,9 @@
   "name": "docuchat-ai",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.32.1",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -36,7 +38,7 @@
     "overrides": {
       "ajv": "6.14.0",
       "minimatch": "3.1.5",
-      "flatted": "3.4.0",
+      "flatted": "3.4.2",
       "langsmith": "0.4.6"
     }
   }
